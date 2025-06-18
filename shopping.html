@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+
+        <!--Font Awesome Link-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet" href="css/shopping.css">
+        <link rel="stylesheet" href="css/stylee.css">
+        
+    
+        <!--Google Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+ 
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+</head>
+<body>
+  
+    <header class="primary-title">
+            <h3><a href="index.html"><i class="fa-solid fa-chevron-left icon"></i>Shopping Continue</a></h3><br>
+            
+    </header>
+    
+  
+    <div class="shopping-content">
+        <hr>
+        <p class="shopping-title">Shopping Cart <br>
+            <span class="text">You have 1 item in your cart</span>
+        </p></div>
+        <div class="container">
+
+        <div class="items">
+            <div class="item">
+
+                <ul class="new-item">
+                    <li><img src="img/gucci.png" class="image"></li>
+                     <li class="info">
+                        <p>Gucci <br>
+                             <span class="description">Extra parfum with..</span>
+                        </p>
+                     </li>
+                     <li class="icons">
+                        <span class="item-quantity">1</span>
+                        <span class="quantiy">
+                        <span class="increase"><i class="fa-solid fa-caret-up"></i></span>
+                       <span class="decrease"><i class="fa-solid fa-caret-down"></i></span> 
+                    </span>
+                    </li>
+                    <li class="icons"><span class="price">$681</span></li>
+                    <li class="icons"><span class="delete"><i class="fa-regular fa-trash-can"></i></span></li>
+                
+                </ul>
+               <ul class="new-item">
+                    <li><img src="img/img2.png" class="image"></li>
+                     <li class="info">
+                        <p>D&P <br>
+                             <span class="description">Extra parfum with..</span>
+                        </p>
+                     </li>
+                     <li class="icons">
+                        <span class="item-quantity">1</span>
+                        <span class="quantiy">
+                        <span class="increase"><i class="fa-solid fa-caret-up"></i></span>
+                       <span class="decrease"><i class="fa-solid fa-caret-down"></i></span> 
+                    </span>
+                    </li>
+                    <li class="icons"><span class="price">$681</span></li>
+                    <li class="icons"><span class="delete"><i class="fa-regular fa-trash-can"></i></span></li>
+                
+                </ul>
+                <ul class="new-item">
+                    <li><img src="img/gucci.png" class="image"></li>
+                     <li class="info">
+                        <p>Gucci <br>
+                             <span class="description">Extra parfum with..</span>
+                        </p>
+                     </li>
+                     <li class="icons">
+                        <span class="item-quantity">1</span>
+                        <span class="quantiy">
+                        <span class="increase"><i class="fa-solid fa-caret-up"></i></span>
+                       <span class="decrease"><i class="fa-solid fa-caret-down"></i></span> 
+                    </span>
+                    </li>
+                    <li class="icons"><span class="price">$681</span></li>
+                    <li class="icons"><span class="delete"><i class="fa-regular fa-trash-can"></i></span></li>
+                
+                </ul>
+            </div>
+        </div>
+
+         <div class="invoice">
+            <div class="invoice-details">
+                <h2>Card Details</h2>
+                <p style="color: #fff;">Card type</p>
+      
+                <div class="invoice-item">
+                  <img src="img/card-type1.png" alt="">
+                   <img src="img/card-type2.png" alt="">
+                   <img src="img/card-type3.png" alt="">
+      
+                   <h1 class="seeAll">See all</h1>
+                 </div>
+                  </div>
+
+                  <!--Payment Form-->
+            <form id="payment-form" class="payment-form">
+                <div class="form-group">
+                    <label for="name-on-card">Name on Card</label>
+                    <input type="text" name="name-on-card" id="name-on-card" placeholder="Name" required>
+                    <p style=" display: none; color: red;" id="textt">Enter a name!</p>
+                </div>
+                <div class="form-group">
+                    <label for="card-number">Card Number</label>
+                    <input type="text" name="card-number" id="card-number" placeholder="1111 2222 3333 4444" required>
+                </div>
+    
+                <div class="form-group">
+                    <div class="date">
+                    <label for="expiration-date">Expiration Date</label>
+                    <label for="cvv"> CVV</label> 
+                </div>
+                    <div class="confirmim">
+                    <input type="text" name="expiration-date" id="expiration-date" placeholder="MM/YY" required>
+                 <input type="text" name="cvv" id="cvv"  placeholder="123"  maxlength="3" required>
+                 </div>
+                </div>
+                 <hr>
+          
+    
+                </form>
+
+                
+             <div class="payment-summary">
+                <div class="summary-detail"></div>
+                <p>SubTotal: <span id="subtotal" class="subtotal">$0.00</span></p>
+                <p>Shipping: <span id="shipping" >$4.00</span></p>
+                <p>Total (Tax inc.) <span id="total" class="total">$0.00</span></p>
+             
+    
+              <button class="pay-button" id="pay-button"> Checkout <i class="fa-solid fa-arrow-right-long"></i></button>
+             </div>
+         </div>
+</div>
+    
+   
+       
+            
+<div class="success-modal" id="success-modal">
+    <div class="modal-content">
+        <h3>Order has benn paid successfully</h3>
+        <div class="checkmark">
+            <i class="fa-solid fa-check"></i>
+        </div>
+    </div>
+</div>
+
+<script src="js/cart.js"></script>
+
+
+    <!--Toastify js-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+</html>

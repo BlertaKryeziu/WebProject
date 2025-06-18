@@ -1,0 +1,246 @@
+@import url("variables.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+.section {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  background-image: url("../img/home.jpg");
+  background-size: cover;
+  backdrop-filter: blur(50px);
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.caption {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  padding: 30px;
+  font-size: 25px;
+}
+
+.nav-logo {
+  display: flex;
+}
+.logo {
+  width: 50px;
+}
+.nav-title {
+  font-family: var(--chelsea-market);
+  font-size: 50px;
+  font-weight: 400;
+  color: white;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  margin-right: 30px;
+  cursor: pointer;
+  position: relative;
+}
+.navbar-menu li i {
+  list-style: none;
+  color: #fff;
+}
+
+.navbar-menu li a span.badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: var(--primary-color);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.navbar-burger {
+  display: none;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.title {
+  position: relative;
+  z-index: 1;
+  font-family: var(--chelsea-market);
+  font-size: 100px;
+  font-weight: 400;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 2%;
+}
+.descriptions {
+  display: flex;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: var(--poppins-font);
+  text-align: center;
+  justify-content: center;
+}
+
+/*Buttons*/
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin: 25px;
+  padding: 25px;
+  justify-content: center;
+}
+
+.category {
+  padding: 10px 20px;
+  border-radius: 25px;
+  border-style: none;
+  cursor: pointer;
+ 
+}
+
+.category.active {
+  background-color: var(--primary-color);
+  
+}
+
+.paragraf {
+  margin: 100px;
+  font-size: 26px;
+  font-family: var(--poppins-font);
+  font-weight: 600;
+}
+.paragraf .fjalia {
+  color: var(--primary-color);
+}
+
+/*produktet*/
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 1200px;
+  position: relative;
+  box-sizing: border-box;
+  margin: auto;
+}
+.products .product {
+  background-color: rgb(220, 217, 217);
+  padding: 10px;
+  margin: auto;
+  margin: 50px;
+}
+
+.product .photo {
+  /*margin-top: -50px;*/
+  justify-content: center;
+  align-items: center;
+}
+
+.product-header {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: var(--montserrat);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.product-description {
+  font-size: 15px;
+  font-family: var(--montserrat);
+  font-weight: bold;
+  color: gray;
+  text-align: center;
+  padding: 15px;
+  white-space: nowrap;     
+  overflow: hidden;         
+  text-overflow: ellipsis;  
+  max-width: 300px;
+}
+
+.shopp {
+  list-style-type: none;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+.price {
+  font-weight: bold;
+  font-size: 25px;
+}
+.add {
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  padding: 8px;
+  color: #fff;
+  cursor: pointer;
+}
+.like {
+  font-size: 25px;
+}
+
+/*fotter*/
+
+.footer {
+  display: flex;
+  background-color: var(--primary-color);
+  padding: 40px;
+  justify-content: space-between;
+  margin: auto;
+}
+.footer-title {
+  font-family: var(--poppins-font);
+  list-style-type: none;
+  margin: 20px;
+  font-size: 15px;
+  color: white;
+}
+.footer-icons,
+.footer-privacy {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 10px;
+  gap: 20px;
+  list-style-type: none;
+  font-size: 35px;
+  color: white;
+}
+.footer-privacy {
+  font-size: 20px;
+}
